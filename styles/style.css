@@ -90,6 +90,7 @@ nav > .navlist img{
 }
 nav .menu{
     display: none;
+    z-index: 99999;
 }
 main{
     width: 100%;
@@ -112,28 +113,37 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 999;
     }
     nav .menu{
         display: block;
         position: absolute;
         top: 20px;
         left: 20px;
-        font-size: 48px;
+        font-size: 42px;
         color:#DB632E;
-        z-index: 99999;
+        z-index: 9999999;
     }
     
     nav .navlist{
         width: 100%;
-        height: 100vh;
+        height: 0;
+        overflow: hidden;
         position: fixed;
-        top: 0;
+        top: 80px;
         left: 0;
-        background: rgba(217, 96, 46, .5);
+        background: rgba(217, 96, 46, .7);
         display: flex;
         flex-direction: column;
         justify-content: center;
         display: none;
+        transition: .5s;
+    }
+    nav .navlist.flex{
+        display: flex;
+    }
+    nav .navlist.height{
+        height: calc(100% - 80px);
     }
     nav > .navlist > .navTitle{
         width: 100%;
@@ -147,6 +157,10 @@ main{
         color:#fff;
         border-left: none;
         position: relative;
+        transition: .5s;
+    }
+    nav > .navlist > .navTitle.sticky{
+        font-size: 30px;
         transition: .5s;
     }
 }
