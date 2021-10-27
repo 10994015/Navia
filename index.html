@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/slick-1.6.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./styles/slick-1.6.0/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./styles/skick.css">
     <title>納維亞矽谷校</title>
 </head>
 <body>
@@ -31,13 +34,33 @@
         </nav>
     </header>
     <main>
-
+            <div class="img-slides">
+                    <ul class="slides"><!-- 圖片尺寸1280*600 -->
+                        <li><img src="./styles/images/adpic.png" alt=""></li>
+                        <li><img src="./styles/images/adpic.png" alt=""></li>
+                        <li><img src="./styles/images/adpic.png" alt=""></li>
+                        <li><img src="./styles/images/adpic.png" alt=""></li>
+                
+                    </ul>
+            </div>
     </main>
 
     <footer id="footer">
-
+        <img src="styles/images/footer.png" alt="" class="footerbg">
     </footer>
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="script/script.js"></script>
+    <script type="text/javascript" src="./styles/slick-1.6.0/slick/slick.min.js"></script>
+    <script>
+    $('.slides').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: false,
+    autoplay:true,
+    autoplaySpeed:2000
+});</script>
 </body>
 </html>
