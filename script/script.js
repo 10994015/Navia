@@ -6,3 +6,11 @@ window.addEventListener("scroll",()=>{
         navTitle[n].classList.toggle("sticky",window.scrollY > 390);
     }
 })
+
+var menu = document.getElementsByClassName('menu')[0];
+var navlist = document.getElementsByClassName('navlist')[0];
+
+menu.addEventListener("click",()=>{
+    navlist.style.display="flex";
+    menu.classList.add('fa-times');
+})
