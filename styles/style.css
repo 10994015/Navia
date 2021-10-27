@@ -102,8 +102,8 @@ main{
 footer{
     width: 100%;
     height: 100px;
-    position: relative;
-    
+    background-color: #000;    
+    color:#fff;
 }
 footer .footerbg{
     position: absolute;
@@ -145,16 +145,13 @@ footer .footerbg{
         position: fixed;
         top: 80px;
         left: 0;
-        background: rgba(217, 96, 46, .7);
+        background: linear-gradient(to bottom,rgba(217, 96, 46, .9),rgba(217, 96, 46, .4));
         display: flex;
         flex-direction: column;
         justify-content: center;
-        display: none;
-        transition: .5s;
+        transition: .5s ease;
     }
-    nav .navlist.flex{
-        display: flex;
-    }
+    
     nav .navlist.height{
         height: calc(100% - 80px);
     }

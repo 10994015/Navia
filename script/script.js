@@ -12,7 +12,7 @@ var navlist = document.getElementsByClassName('navlist')[0];
 
 menu.addEventListener("click",()=>{
     
-        navlist.classList.toggle('flex');
+        navlist.style.display = "flex";
         menu.classList.toggle('fa-times');
         setTimeout(()=>{
             navlist.classList.toggle('height');
