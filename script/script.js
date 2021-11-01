@@ -23,6 +23,9 @@ function openNew(){
     console.log(!newItemContent[t].classList.contains('active'));
     if(!newItemContent[t].classList.contains('active')){
         removeNew();
+        newItemTitle[t].style.color="#E83428";
+        newItemTitle[t].style.transition=".5s";
+        newItemTitle[t].style.fontWeight="600";
         newItemContent[t].classList.add('active');
         newToggle[t].classList.add('fa-window-minimize');
     }else{
@@ -32,6 +35,9 @@ function openNew(){
 
 function removeNew(){
     for(var r=0;r<newItemContent.length;r++){
+        newItemTitle[r].style.color="#000";
+        newItemTitle[r].style.transition=".5s";
+        newItemTitle[r].style.fontWeight="500";
         newItemContent[r].classList.remove('active');
         newToggle[r].classList.remove('fa-window-minimize');
     }

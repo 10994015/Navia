@@ -5,6 +5,8 @@
 }
 header{
     width:100%;
+    z-index:9999999999 ;
+
 }
 header .headerBg{
     width: 100%;
@@ -20,7 +22,7 @@ nav{
     padding: 15px 200px;
     transition: .5s ease;
     margin-top: -5px;
-    z-index: 999999999;
+    z-index: 9999999999;
 }
 nav.sticky{
     padding: 8px 150px;
@@ -91,7 +93,7 @@ nav > .navlist img{
 }
 nav .menu{
     display: none;
-    z-index: 99999;
+    z-index: 99999999999999;
 }
 main{
     width: 100%;
@@ -102,22 +104,28 @@ main{
     
 }
 
-main .latestNews{
+main .latestNews,
+main .courseAlbum,
+main .contactUs{
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 100px;
 }
-main .latestNews .newsBox{
+main .latestNews .newsBox,
+main .courseAlbum .albumBox,
+main .contactUs .contactBox{
     width: 80%;
     min-height: 500px;
     height: auto;
-    background: #fff;
-    border-radius: 10px;
+    background: #ffffff;
+    border-radius: 15px;
     position: relative;
-    z-index: 999999;
+    z-index: 9;
 }
-main .latestNews .newsBox .newtitle{
+main .latestNews .newsBox .newtitle,
+main .courseAlbum .albumBox .albumtitle,
+main .contactUs .contactBox .contacttitle{
     position: absolute;
     top: -50px;
     width: 70px;
@@ -130,16 +138,16 @@ main .latestNews .newsBox .newtitle{
     font-size: 1.8rem;
     z-index: -1;
 }
-.newtitle1{
+.newtitle1,.albumtitle1,.contacttitle1{
     left:30px;
 }
-.newtitle2{
+.newtitle2 ,.albumtitle2,.contacttitle2{
     left:90px;
 }
-.newtitle3{
+.newtitle3,.albumtitle3,.contacttitle3{
     left:150px;
 }
-.newtitle4{
+.newtitle4,.albumtitle4,.contacttitle4{
     left:210px;
 }
 main .latestNews .newsBox .newsHeader{
@@ -152,11 +160,15 @@ main .latestNews .newsBox .newsHeader{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-main .latestNews .newsBox .newsHeader h1{
+main .latestNews .newsBox .newsHeader h1,
+main .courseAlbum .albumBox .albumHeader h1,
+main .contactUs .contactBox .contactHeader h1{
     color:#fff;
     position: relative;
 }
-main .latestNews .newsBox .newsHeader h1::after{
+main .latestNews .newsBox .newsHeader h1::after,
+main .courseAlbum .albumBox .albumHeader h1::after,
+main .contactUs .contactBox .contactHeader h1::after{
     content:'';
     background: #fff;
     width: 20px;
@@ -165,7 +177,9 @@ main .latestNews .newsBox .newsHeader h1::after{
     left: -25px;
     top: 50%;
 }
-main .latestNews .newsBox .newsHeader h1::before{
+main .latestNews .newsBox .newsHeader h1::before,
+main .courseAlbum .albumBox .albumHeader h1::before,
+main .contactUs .contactBox .contactHeader h1::before{
     content:'';
     background: #fff;
     width: 20px;
@@ -174,7 +188,8 @@ main .latestNews .newsBox .newsHeader h1::before{
     right: -25px;
     top: 50%;
 }
-main .latestNews .newsBox .newItem{
+main .latestNews .newsBox .newItem,
+main .courseAlbum .albumBox .albumBox .albumItem{
     width: 100%;
     padding:10px 30px;
 }
@@ -184,14 +199,10 @@ main .latestNews .newsBox .newItem .newItemTitle{
     border-bottom: 1px dashed #000;
     cursor: pointer;
     line-height: 50px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     position: relative;
 }
-.newItemTitle.sticky{
-    transition: 1s;
-    color:#E83428;
-    font-weight: 600;
-}
+
 
 main .latestNews .newsBox .newItem .newItemTitle > i{
     position: absolute;
@@ -211,16 +222,16 @@ main .latestNews .newsBox .newItem .newItemContent p{
     padding: 10px;
     height: auto;
 }
-main .latestNews .newsBox .newItem .newItemContent::-webkit-scrollbar{
+main .latestNews .newsBox .newItem .newItemContent::-webkit-scrollbarr{
     width: .5rem;
     background: rgba(237, 190, 107, .3);
     border-radius: 5PX;
 }
-main .latestNews .newsBox .newItem .newItemContent::-webkit-scrollbar-track {
+main .latestNews .newsBox .newItem .newItemContent::-webkit-scrollbar-track{
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
   }
     
-main .latestNews .newsBox .newItem .newItemContent::-webkit-scrollbar-thumb {
+main .latestNews .newsBox .newItem .newItemContent::-webkit-scrollbar-thumb{
     background-color: rgba(237, 190, 107, 1);
     border-radius: 5px;
   }
@@ -229,11 +240,138 @@ main .latestNews .newsBox .newItem .newItemContent.active{
     height: 250px;
 
 }
+
+main .courseAlbum .albumBox .albumHeader{
+    width: 100%;
+    height: 70px;
+    background: #126EB6;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+main .courseAlbum .albumBox .albumContent{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+main .courseAlbum .albumBox .albumContent .albumItem{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+    cursor: pointer;
+    
+}
+main .courseAlbum .albumBox .albumContent .albumItem:hover>.albumImg .bg-touch{
+    opacity: 1;
+    transition: .5s;
+}
+main .courseAlbum .albumBox .albumContent .albumItem .albumImg{
+    position: relative;
+
+}
+main .courseAlbum .albumBox .albumContent .albumItem .albumImg .bg-touch{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background: rgba(235, 117, 66, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+}
+main .courseAlbum .albumBox .albumContent .albumItem .albumImg .albumPhoto{
+    width:300px;
+    height: 300px;
+    object-fit: cover;
+    z-index: 8;
+}
+main .courseAlbum .albumBox .albumContent .albumItem > p{
+    margin-top: 15px;
+    border-top: 1px #000 dashed;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color:#EB7542;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.albumTopLeft{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    z-index: 99;
+
+}
+.albumTopRight{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    z-index: 99;
+}
+main .contactUs .contactBox .contactHeader{
+    width: 100%;
+    height: 70px;
+    background: #945625;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+main .contactUs .contactBox .contactContent{
+    padding: 15px;
+}
+main .contactUs .contactBox .contactContent .contactLeft{
+    display: flex;
+    flex-direction: column;
+}
+main .contactUs .contactBox .contactContent .contactLeft label{
+    width: 300px;
+    background: #B07C3D;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    line-height: 40px;
+    padding-left:15px;
+    color:#fff;
+    font-weight: 600;
+    border:1px #B07C3D solid;
+    margin: 20px 0;
+}
+main .contactUs .contactBox .contactContent .contactLeft label>p{
+    width: 50px;
+}
+main .contactUs .contactBox .contactContent .contactLeft label > input{
+    height: 37px;
+    width:250px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 5px;
+}
 footer{
     width: 100%;
-    height: 100px;
-    background-color: #000;    
     color:#fff;
+}
+footer >img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
 }
 footer .footerbg{
     position: absolute;
