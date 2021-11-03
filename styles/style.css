@@ -333,29 +333,35 @@ main .contactUs .contactBox .contactHeader{
 }
 main .contactUs .contactBox .contactContent{
     padding: 15px;
+    display: flex;
+    justify-content: space-around;
 }
 main .contactUs .contactBox .contactContent .contactLeft{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 400px;
 }
 main .contactUs .contactBox .contactContent .contactLeft label{
-    width: 300px;
+    width: 320px;
     background: #B07C3D;
-    height: 40px;
+    height: 50px;
     border-radius: 30px;
     display: flex;
-    line-height: 40px;
+    line-height: 50px;
     padding-left:15px;
     color:#fff;
     font-weight: 600;
-    border:1px #B07C3D solid;
+    border:3px #B07C3D solid;
     margin: 20px 0;
+    overflow: hidden;
+    font-size: 18px;
 }
 main .contactUs .contactBox .contactContent .contactLeft label>p{
     width: 50px;
 }
 main .contactUs .contactBox .contactContent .contactLeft label > input{
-    height: 37px;
+    height: 47px;
     width:250px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
@@ -363,6 +369,23 @@ main .contactUs .contactBox .contactContent .contactLeft label > input{
     outline: none;
     font-size: 18px;
     padding: 5px;
+}
+main .contactUs .contactBox .contactContent .contactRight >label{
+    width: 350px;
+    height: 350px;
+    background: #B07C3D;
+    display: block;
+    padding: 10px;
+}
+main .contactUs .contactBox .contactContent .contactRight >label >h1{
+    font-size: 18px;
+    color:#fff;
+    border-bottom: 1px #fff solid;
+    font-weight: 500;
+}
+main .contactUs .contactBox .contactContent .contactRight >label >textarea{
+    width: 300px;
+    height: 200px;
 }
 footer{
     width: 100%;
