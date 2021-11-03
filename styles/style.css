@@ -432,16 +432,14 @@ main .contactUs .contactBox .contactContent .contactRight >input[type="submit"]:
     transition: .5s;
 }
 footer{
-    background-image: url(./images/webfoot-05.png);
-    background-size: contain;
-    background-position: center;
+   
     width: 100%;
     color:#fff;
-    height:148px;
+    height:180px;
 }
 footer >img{
     width: 100%;
-    height: 150px;
+    height: 100%;
     object-fit: cover;
 }
 footer .footerbg{
