@@ -336,10 +336,20 @@ main .contactUs .contactBox .contactContent{
     display: flex;
     justify-content: space-around;
 }
+main .contactUs .contactBox .contactContent .contactIMG{
+    width: 30%;
+    height: 100%;
+}
+main .contactUs .contactBox .contactContent .contactIMG>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 main .contactUs .contactBox .contactContent .contactLeft{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 400px;
 }
 main .contactUs .contactBox .contactContent .contactLeft label{
@@ -353,7 +363,7 @@ main .contactUs .contactBox .contactContent .contactLeft label{
     color:#fff;
     font-weight: 600;
     border:3px #B07C3D solid;
-    margin: 20px 0;
+    margin: 10px 0;
     overflow: hidden;
     font-size: 18px;
 }
@@ -370,26 +380,64 @@ main .contactUs .contactBox .contactContent .contactLeft label > input{
     font-size: 18px;
     padding: 5px;
 }
+main .contactUs .contactBox .contactContent .contactRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 main .contactUs .contactBox .contactContent .contactRight >label{
     width: 350px;
-    height: 350px;
+    height: 250px;
     background: #B07C3D;
     display: block;
+    border-radius:10px;
     padding: 10px;
 }
-main .contactUs .contactBox .contactContent .contactRight >label >h1{
+main .contactUs .contactBox .contactContent .contactRight >label > h1{
     font-size: 18px;
     color:#fff;
     border-bottom: 1px #fff solid;
-    font-weight: 500;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
 }
 main .contactUs .contactBox .contactContent .contactRight >label >textarea{
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 150px;
+    outline: none;
+    border:none;
+    background: #B07C3D;
+    padding: 10px;
+    font-size: 18px;
+}
+main .contactUs .contactBox .contactContent .contactRight >label >textarea::placeholder{
+    color:rgba(255, 255, 255, .6);
+}
+main .contactUs .contactBox .contactContent .contactRight >input[type="submit"]{
+    outline: none;
+    border:none;
+    border-radius: 10px;
+    width: 350px;
+    height: 50px;
+    color:#fff;
+    background-color: #B07C3D;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+main .contactUs .contactBox .contactContent .contactRight >input[type="submit"]:hover{
+    background: #945625;
+    transition: .5s;
 }
 footer{
+    background-image: url(./images/webfoot-05.png);
+    background-size: contain;
+    background-position: center;
     width: 100%;
     color:#fff;
+    height:148px;
 }
 footer >img{
     width: 100%;
