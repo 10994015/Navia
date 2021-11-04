@@ -1,8 +1,13 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: doll;
+    src: url(doll.TTF);
+  }
 header{
     width:100%;
     z-index:9999999999 ;
@@ -23,6 +28,7 @@ nav{
     transition: .5s ease;
     margin-top: -5px;
     z-index: 9999999999;
+    font-family: doll;
 }
 nav.sticky{
     padding: 8px 150px;
@@ -134,9 +140,11 @@ main .contactUs .contactBox .contacttitle{
     border-radius: 50%;
     text-align: center;
     padding-right: 5px;
-    padding-top: 8px;
+    padding-top: 15px;
     font-size: 1.8rem;
     z-index: -1;
+    font-family: doll;
+    color:#444;
 }
 .newtitle1,.albumtitle1,.contacttitle1{
     left:30px;
@@ -165,6 +173,7 @@ main .courseAlbum .albumBox .albumHeader h1,
 main .contactUs .contactBox .contactHeader h1{
     color:#fff;
     position: relative;
+    font-family: doll;
 }
 main .latestNews .newsBox .newsHeader h1::after,
 main .courseAlbum .albumBox .albumHeader h1::after,
@@ -369,6 +378,9 @@ main .contactUs .contactBox .contactContent .contactLeft label{
 }
 main .contactUs .contactBox .contactContent .contactLeft label>p{
     width: 50px;
+    font-family: doll;
+    font-weight: 500;
+    font-size: 20px;
 }
 main .contactUs .contactBox .contactContent .contactLeft label > input{
     height: 47px;
@@ -401,6 +413,9 @@ main .contactUs .contactBox .contactContent .contactRight >label > h1{
     height: 50px;
     line-height: 50px;
     padding-left: 10px;
+    font-family: doll;
+    font-weight: 500;
+    font-size: 22px;
 }
 main .contactUs .contactBox .contactContent .contactRight >label >textarea{
     width: 100%;
@@ -409,7 +424,7 @@ main .contactUs .contactBox .contactContent .contactRight >label >textarea{
     border:none;
     background: #B07C3D;
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 main .contactUs .contactBox .contactContent .contactRight >label >textarea::placeholder{
     color:rgba(255, 255, 255, .6);
@@ -426,6 +441,9 @@ main .contactUs .contactBox .contactContent .contactRight >input[type="submit"]{
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    font-family: doll;
+    font-weight: 500;
+    font-size: 22px;
 }
 main .contactUs .contactBox .contactContent .contactRight >input[type="submit"]:hover{
     background: #945625;
@@ -434,8 +452,8 @@ main .contactUs .contactBox .contactContent .contactRight >input[type="submit"]:
 footer{
    
     width: 100%;
-    color:#fff;
     height:180px;
+    position: relative;
 }
 footer >img{
     width: 100%;
@@ -446,7 +464,18 @@ footer .footerbg{
     position: absolute;
     width: 100%;
 }
-
+footer .footerText{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#000;
+    flex-direction: column;    
+}
 @media screen and (max-width:1130px){
     nav{
         
