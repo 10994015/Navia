@@ -1,6 +1,261 @@
 main{
-    min-height: 100vh;
-    height: auto;
-    padding-top: 5rem;
+    height: calc(100vh - 90px);
     background-color: #EEBF6B;
+}
+.main-reserve{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#bookdate,#time{
+    border-radius: 10px;
+    width: 150px;
+    height: 35px;
+    margin-right: 5px;
+    margin: auto;
+}
+.people{
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    margin-right: 10px;
+    margin: auto;
+    margin-top: 20px;
+}
+.alldate{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border: 2px #000 solid;
+    border-radius: 5px;
+    background: #e7ead9;
+    padding-top:20px;
+    box-sizing: border-box;
+}
+.num,.date{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.alldate h1{
+    font-size: 20px;
+    background: #fff;
+    color:#E73917;
+    border-radius: 10px;
+    border: 1px #E73917 solid;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin:auto;    
+}
+.allinfo h1{
+    font-size: 20px;
+    background: rgba(255, 255, 255, .7);
+    color:#E73917;
+    border-radius: 10px;
+    border: 1px #E73917 solid;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin:auto;
+}
+.line{
+    width: 300px;
+    height: 1px;
+    background: #fff;
+    margin: 15px auto;
+}
+
+.allinfo{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 20px;
+    padding-top: 20px;
+    height: auto;
+}
+
+.allinfo input{
+    outline: none;
+    border: none;
+    border-bottom: 1px #E73917 solid;
+    width: 250px;
+    height: 30px;
+    font-size: 18px;
+    background: transparent;
+}
+.allinfo div{
+    display: flex;
+    width: 80%;
+    margin-top: 20px;
+
+}
+.allinfo span{
+    font-weight: bold;
+    width: 90px;
+    font-size: 18px;
+    color:#E73917;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.visit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 100px;
+    
+
+}
+.div-btn{
+    width: 50%;
+    margin: auto;
+    position: relative; 
+}
+.visit-btn{
+    outline: none;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border: none;
+    background: #EB7842;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.visit-btn:hover{
+    background:#FF3D0A;
+}
+
+
+.calendar{
+width:397px;
+height:350px;
+background:#fff;
+border-right: 1px #000 solid;
+padding-left: 50px;
+padding-top: 20px;
+}
+.allinfo p{
+color: #666;
+margin-left: 30px;
+margin-top: 20px;
+}
+.body-list ul{
+width:80%;
+font-family:arial;
+font-weight:bold;
+font-size:14px;
+}
+.body-list ul li{
+width:14%;
+height:36px;
+line-height:36px;
+list-style-type:none;
+display:block;
+box-sizing:border-box;
+float:left;
+text-align:center;
+}
+.lightgrey{
+color:#a8a8a8; 
+}
+.darkgrey{
+color:#565656; 
+}
+.green{
+color:#6ac13c;
+}
+.greenbox{
+border:1px solid #6ac13c;
+background:#e9f8df; 
+}
+li.darkgrey{
+cursor: pointer;
+}
+li.greenbox{
+cursor: pointer;
+}
+li.lightgrey{
+cursor: pointer;
+}
+li.darkgrey:hover,li.lightgrey:hover,li.greenbox:hover{
+background: #ccc;
+}
+
+.prev-next{
+width: 50%;
+margin: auto;
+color:#000;
+display: flex;
+flex-direction: column;
+}
+.prev-next div{
+display: flex;
+}
+.prev-next h3,.prev-next h2{
+margin-right: 20px;
+color:#E73917;
+}
+
+.prev-next a{
+text-decoration: none;
+color:#E73917;
+margin-right: 20px;
+}
+.prev-next a:hover{
+color:#666;
+}
+
+
+@media screen and (max-width:1024px){
+    main{
+        height: 120vh;
+    }
+}
+@media screen and (max-width:900px){
+    .main-reserve{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+    main{
+        height: 250vh;
+    }
+    .allinfo{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:414px){
+    .alldate{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        border: 2px #000 solid;
+        border-radius: 5px;
+        background: #e7ead9;
+        padding-top:20px;
+        box-sizing: border-box;
+    }
+    .calendar{
+        width:347px;
+        height:350px;
+        background:#fff;
+        border-right: 1px #000 solid;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
 }

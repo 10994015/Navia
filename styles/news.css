@@ -1,9 +1,9 @@
 main{
-    min-height: 100vh;
+    min-height: calc(100vh - 180px);
     height: auto;
     background-color: #EEBF6B;
     background-size:cover;
-    padding-top: 8em;
+    padding-top: 12em;
 }
 
 

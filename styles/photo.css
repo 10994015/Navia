@@ -81,6 +81,9 @@ ul.pagination li a {
     text-decoration: none;
     font-size: 18px;
 }
+ul.pagination li a.active{
+    color: #DA342A;
+}
 ul.pagination li a:hover{
     background: #DA342A;
     color:#fff;
