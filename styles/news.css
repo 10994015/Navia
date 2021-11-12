@@ -1,0 +1,206 @@
+main{
+    min-height: 100vh;
+    height: auto;
+    background-color: #EEBF6B;
+    background-size:cover;
+    padding-top: 8em;
+}
+
+
+
+main .latestNews{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main .latestNews .newsBox{
+    width: 80%;
+    height: auto;
+    background: #ffffff;
+    border-radius: 15px;
+    position: relative;
+    z-index: 9;
+}
+main .contactUs .contactBox{
+    width: 80%;
+    min-height: 300px;
+    height: auto;
+    background: #ffffff;
+    border-radius: 15px;
+    position: relative;
+    z-index: 9;
+}
+main .latestNews .newsBox .newtitle{
+    position: absolute;
+    top: -50px;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding-right: 5px;
+    padding-top: 15px;
+    font-size: 1.8rem;
+    z-index: -1;
+    font-family: doll;
+    color:#444;
+}
+.newtitle1,.albumtitle1,.contacttitle1{
+    left:30px;
+}
+.newtitle2 ,.albumtitle2,.contacttitle2{
+    left:90px;
+}
+.newtitle3,.albumtitle3,.contacttitle3{
+    left:150px;
+}
+.newtitle4,.albumtitle4,.contacttitle4{
+    left:210px;
+}
+main .latestNews .newsBox .newsHeader{
+    width: 100%;
+    height: 70px;
+    background: #16843C;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+main .latestNews .newsBox .newsHeader h1{
+    color:#fff;
+    position: relative;
+    font-family: doll;
+}
+main .latestNews .newsBox .newsHeader h1::after{
+    content:'';
+    background: #fff;
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    left: -25px;
+    top: 50%;
+}
+main .latestNews .newsBox .newsHeader h1::before{
+    content:'';
+    background: #fff;
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    right: -25px;
+    top: 50%;
+}
+main .latestNews .newsBox .newContent{
+    padding: 15px 0;
+}
+main .latestNews .newsBox .newItem{
+    width: 100%;
+    padding:0px 30px;
+}
+main .latestNews .newsBox .newItem .newItemTitle{
+    width: 100%;
+    height:70px;
+    border-bottom: 1px dashed #000;
+    cursor: pointer;
+    line-height: 70px;
+    position: relative;
+    padding: 0 10px;
+    
+}
+
+main .latestNews .newsBox .newItem .newItemTitle>h1{
+    width: 90%;
+    overflow: hidden;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+main .latestNews .newsBox .newItem .newItemTitle:hover{
+    background: #F4D8A6;
+    transition: .5s;
+}
+
+main .latestNews .newsBox .newItem .newItemTitle > i{
+    position: absolute;
+    top: 35%;
+    right: 20px;
+}
+main .latestNews .newsBox .newItem .newItemContent{
+    width: 100%;
+    height: 0;
+    background: rgba(237, 190, 107, .6);
+    overflow: hidden;
+    transition: .5s;
+    overflow-y: scroll;
+    
+}
+main .latestNews .newsBox .newItem .newItemContent p{
+    padding: 10px;
+    height: auto;
+}
+main .latestNews .newsBox .newItem .newItemContent::-webkit-scrollbarr{
+    width: .5rem;
+    background: rgba(237, 190, 107, .3);
+    border-radius: 5PX;
+}
+main .latestNews .newsBox .newItem .newItemContent::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  }
+    
+main .latestNews .newsBox .newItem .newItemContent::-webkit-scrollbar-thumb{
+    background-color: rgba(237, 190, 107, 1);
+    border-radius: 5px;
+  }
+main .latestNews .newsBox .newItem .newItemContent.active{
+    transition: .5s ;
+    height: 250px;
+
+}
+
+
+
+ul.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-top: 100px;
+ }
+ul.pagination li {
+    display: inline;
+    
+}
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+ul.pagination li a:hover{
+    background: #DA342A;
+    color:#fff;
+}
+
+
+@media screen and (max-width:500px){
+  
+    main .latestNews .newsBox .newItem .newItemTitle>h1{
+        width: 80%;
+        overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    }
+}
+
+@media screen and (max-width:450px){
+  
+    main .latestNews .newsBox .newsHeader{
+        padding-left: 50px;
+    }
+    main .latestNews .newsBox .newsHeader>h1{
+        font-size: 1.6rem;
+    }
+   
+    
+}

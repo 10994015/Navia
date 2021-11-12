@@ -219,12 +219,11 @@ main .latestNews .newsBox .newItem .newItemTitle{
     border-bottom: 1px dashed #000;
     cursor: pointer;
     line-height: 70px;
-    
     position: relative;
-    
     padding: 0 10px;
     
 }
+
 main .latestNews .newsBox .newItem .newItemTitle>h1{
     width: 90%;
     overflow: hidden;
