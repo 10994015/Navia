@@ -16,7 +16,6 @@ input[type="text"],input[type="password"]{
     display: flex;
     justify-content: center;  
     align-items: center;
-    padding-top: 5em;
 }
 .loginBg{
     margin-right: 100px;
