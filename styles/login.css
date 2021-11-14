@@ -22,15 +22,16 @@ input[type="text"],input[type="password"]{
 }
 .login h1{
     text-align: center;
-    color:#e7ead9;
+    color:#333;
      position: relative;
      font-size: 28px;
 }
 
 .login h1 >i{
     font-size: 80px;
-    color:#e7ead9;
+    color:#333;
     position: relative;
+    
 }
 
 
@@ -43,22 +44,23 @@ input[type="text"],input[type="password"]{
 .login .signin{
     width: 350px;
     height: 300px;
-    background: #e7ead9;
+    background: rgba(231, 234,217,.5);
     border-radius: 10px;
-    margin: auto;
+    margin: 20px auto;
     padding-top: 30px;
+    box-shadow:0 0 8px #333;
 }
 .login .signin input:not([type=button]){
-    border-bottom: 2px solid #EF8C42;
+    border-bottom: 2px solid #000;
     width: 200px;
     height: 30px;
     background: transparent;
-    color:#EF8C42;
+    color:#000;
     font-size: 16px;
 }
 
  .login .signin input::placeholder{
-    color:#EF8C42;
+    color:#000;
  }
  .login .signin div{
     width: 200px;
@@ -68,10 +70,10 @@ input[type="text"],input[type="password"]{
  .login-btn{
     width: 200px;
     height: 40px;
-    border: 2px #EF8C42 solid;
+    border: 2px #000 solid;
     border-radius: 10px;
     background: transparent;
-    color:#EF8C42;
+    color:#000;
     text-align: center;
     line-height: 30px;
     margin: auto;
@@ -91,7 +93,7 @@ input[type="text"],input[type="password"]{
     position: absolute;
     top: 5px;
     right: 0;
-    color:#EF8C42;
+    color:#000;
     cursor: pointer;
 }
 
