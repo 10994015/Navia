@@ -1,0 +1,52 @@
+main{
+    min-height: calc(100vh - 180px);
+    height: auto;
+    background-color: #EEBF6B;
+    background-size:cover;
+    padding:100px 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif,"微軟正黑體";
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .about-img{
+    width: 500px;
+    margin: 0 15px;
+}
+.about .about-img img{
+    width: 100%;
+}
+.about-content{
+    width:600px;
+    margin: 0 50px;
+    padding: 10px;
+}
+.about-content h1{
+    margin-bottom: 15px;
+}
+.about-content p{
+    margin: 15px 0;
+}
+.join{
+    margin: 15px 0;
+    display: block;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    background: #EB7543;
+    color:#fff;
+    line-height: 40px;
+    font-weight: 600;
+    box-shadow: 0 0 2px #333;
+}
+.join:hover{
+    box-shadow: none;
+    transition: .5s;
+}
+.aboutIcon a{
+    margin: 15px 5px;
+}
