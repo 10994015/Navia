@@ -40,24 +40,7 @@
         </nav>
     </header>
    <main>
-        <div class="login">
-            <!-- <div class="loginBg">
-                <img src="../styles/images/user.svg" alt="" width="500">
-            </div> -->
-                <div class="loginBox">
-                        <h1><i class="fas fa-user-circle"></i></h1><h1>學員登入</h1>
-                        <div class="signin">
-                        <form action="" method="post" accept-charset="utf-8">
-                            <div><input type="text" name="" placeholder="帳號｜Username" id="user"></div>
-                            <div class="viewpassword"><input type="password" name="" placeholder="密碼｜Password" id="pass"><i id="view" class="fas fa-eye-slash"></i></div>
-
-                            <div><input type="button" class="login-btn" id="signin" value="Login"></div> 
-                            <span id="error">帳號或密碼錯誤!</span>      
-                        </form>
-                           
-                        </div>
-                </div>
-        </div>
+       
    </main>
 
     <footer id="footer">
@@ -79,21 +62,5 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="../script/webscript.js"></script>
     <script src="../script/top.js"></script>
-    <script src="../script/viewpassword.js"></script>
-    <script>
-        var user = document.getElementById('user');
-        var pass = document.getElementById('pass');
-        var signin = document.getElementById('signin');
-        var error = document.getElementById('error');
-        signin.addEventListener("click",()=>{
-            if(user.value=="admin"&&pass.value=="1234"){
-                alert("登入成功!");
-                window.location.href='contactBook.html';
-        }else{
-            alert("帳號或密碼錯誤!");
-            error.style.display="flex";
-        }
-        });
-    </script>
 </body>
 </html>

@@ -97,7 +97,13 @@ input[type="text"],input[type="password"]{
     cursor: pointer;
 }
 
-
+#error{
+    text-align: center;
+    color:#f00;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
 @media screen and (max-width:1024px){
     .loginBg{
         display: none;
