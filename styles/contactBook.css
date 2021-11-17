@@ -1,0 +1,179 @@
+  
+a{
+    text-decoration: none;
+}
+
+    /*-----------menu-------------*/
+    .cb-menu{
+        position: relative;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 200vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: #013147;
+        color:#fff;
+        transition: .5s;
+        z-index: 100;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .leftToggle{
+        left:0px;
+        transition: .5s;
+    }
+    .cb-menu .cb-menu-btn{
+        position: absolute;
+        top: 300px;
+        right: -60px;
+        width: 50px;
+        height: 50px;
+        background: #013147;
+        color:#FFF;
+        cursor: pointer;
+        border-radius: 5px;
+         padding-top: 10px;
+    }
+    .cb-menu .cb-menu-btn i{
+       font-size: 30px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    
+
+    .cb-menu img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin:  auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 7em;
+    }
+    .cb-menu select{
+        border-bottom: 1px #333 solid;
+        background: transparent;
+        color:#fff;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .cb-menu select option{
+        color:#333;
+    }
+    .cb-menu div{
+        margin-bottom: 20px;
+     
+    }
+    .cb-list{
+        width: 100%;
+        
+    }
+
+    .cb-list a{
+        width: 100%;
+        height: 40px;
+        color:#fff;
+        list-style-type: none;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: none;
+        display: block;
+    }
+    .cb-list a:hover{
+        background:#06AAF2;
+        color:#333;
+    }
+/* ----------end---------*/
+    main{
+        background-color: #EEBF6B;
+        padding: 5em 0;
+    }
+  .contentbook{
+        position: relative;
+        height: 700px;
+    }
+     .cb-btn{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1em;
+        width: 80%;
+        max-width: 1000px;
+        margin: auto;
+        
+
+
+     }
+    .cb-btns{
+        display: flex;
+         border: 2px #EB7543 solid;
+        border-radius: 10px;
+        width: 375px;
+        height: 150px;
+        padding: 9px 15px;
+        margin: 0 25px 20px 25px;
+        color: #333;
+        box-shadow: 0px 0px 10px #EB7543;
+        background-color: #fff;
+
+    }
+    .cb-btns:hover{
+        background: #EDCC29;
+    }
+    .cb-btn div i{
+        display: flex;
+        align-items: center;
+        font-size: 5em;
+        color:#EB7543;
+        margin-right: 20px;
+    }
+    .cb-btn div div{
+        display: flex;
+        flex-direction: column;
+    }
+    .cb-btns h1{
+        color:#EB7543;
+        font-family: 'Microsoft JhengHei';
+    }
+    .cb-btns p{
+        color:#EB7543;
+    }
+
+@media screen and (max-width: 1024px){
+      .cb-btn{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 1em;
+        width: 100%;
+        max-width: 1000px;
+       
+     }
+     .cb-btns{
+        display: flex;
+         border: 2px #009E9D solid;
+        border-radius: 10px;
+        width: 350px;
+        height: 130px;
+        padding: 9px 15px;
+        margin: 0 15px 20px 15px;
+        color: #333;
+        box-shadow: 5px 5px 10px #aaa;
+
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .contentbook{
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+}

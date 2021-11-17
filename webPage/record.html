@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/contactBook.css">
-    <link rel="stylesheet" href="../styles/basic.css">
+    <link rel="stylesheet" href="../styles/record.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="./styles/slick-1.6.0/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./styles/slick-1.6.0/slick/slick-theme.css"/>
@@ -67,52 +67,77 @@
             </div>
         </div>
 
-        <div class="contactBook">
-                <div class="cb-btn">
-                        <a href="basic.html" title=""><div class="cb-btns">
-                            <i class="far fa-address-card"></i>
-                            <div>
-                                <h1>基本資料</h1>
-                                <p>這是基本資料這是基本資料這是基本資料</p>
-                            </div>
-                        </div></a>
-                         <a href="arrive.html" title=""><div class="cb-btns">
-                            <i class="fas fa-user-check"></i>
-                            <div>
-                                <h1>出勤紀錄</h1>
-                                <p>這是出勤狀況這是出勤狀況這是出勤狀況</p>
-                            </div>
-                        </div></a>
-                         <a href="calendar.html" title=""><div class="cb-btns">
-                            <i class="fas fa-calendar-alt"></i>
-                            <div>
-                                <h1>課程行事曆</h1>
-                                <p>這是課程行事曆這是課程行事曆這是課程行事曆</p>
-                            </div>
-                        </div></a>
-                         <a href="record.html" title=""><div class="cb-btns">
-                            <i class="fas fa-paper-plane"></i>
-                            <div>
-                                <h1>課堂學習紀錄</h1>
-                                <p>這是學生學習計畫這是學生學習計畫這是學生學習計畫</p>
-                            </div>
-                        </div></a>
-                         <a href="resume_1.html" title=""><div class="cb-btns">
-                          <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <h1>學習歷程</h1>
-                                <p>這是學習歷程這是學習歷程這是學習歷程</p>
-                            </div>
-                        </div></a>
-                         <a href="fees.html" title=""><div class="cb-btns">
-                            <i class="fas fa-donate"></i>
-                            <div>
-                                <h1>訂單紀錄</h1>
-                                <p>這是費用及收據這是費用及收據這是費用及收據</p>
-                            </div>
-                        </div></a>
-                    </div>
+
+        <div class="record-main">
+            <div class="Suject">
+                
+                <select name="" id="">
+                    <option value="">微積分</option>
+                    <option value="">微積分</option>
+                </select>
+            </div>
+            
+                <div class="learning-recode">
+                 <!-- 一個欄位 -->
+                  <div>
+                    <div class="lr-title"><h3>日期</h3></div>
+                    <div class="lr-content"> <input type="date" name="" value="2021-08-22" ></div>
+                  </div>
+                 <!-- 一個欄位結束 -->
+                  <!-- 一個欄位 -->
+                  <div>
+                    <div class="lr-title"><h3>班級/課程代碼</h3></div>
+                    <div class="lr-content"><input type="text" name="" value="A1123" readonly></div>
+                  </div>
+                 <!-- 一個欄位結束 -->
+                  <!-- 一個欄位 -->
+                  <div>
+                    <div class="lr-title"><h3>科目</h3></div>
+                    <div class="lr-content"><input type="text" name="" value="微積分" readonly></div>
+                  </div>
+                 <!-- 一個欄位結束 -->
+                  <!-- 一個欄位 -->
+                  <div>
+                    <div class="lr-title"><h3>課程進度</h3></div>
+                    <div class="lr-content"><input type="text" name="" value="CH1聽力練習第一回" readonly></div>
+                  </div>
+                 <!-- 一個欄位結束 -->
+                  <!-- 一個欄位 -->
+                  <div>
+                    <div class="lr-title"><h3>回家作業</h3></div>
+                    <div class="lr-content"><input type="text" name="" value="題本p.15" readonly></div>
+                  </div>
+                 <!-- 一個欄位結束 -->
+                  <!-- 一個欄位 -->
+                  <div>
+                    <div class="lr-title"><h3>考試/成績</h3></div>
+                    <div class="lr-content"><input type="text" name="" value="聽力第一次小考/100分" readonly></div>
+                  </div>
+                 <!-- 一個欄位結束 -->
+                  <!-- 一個欄位 -->
+                  <div>
+                    <div class="lr-title"><h3>學生課程狀態</h3></div>
+                    <div class="lr-content"><input type="text" name="" value="精神不佳，上課打瞌睡" readonly></div>
+                  </div>
+                 <!-- 一個欄位結束 -->
+                 <!-- 一個欄位 -->
+                  <div>
+                    <div class="lr-title"><h3>老師的話</h3></div>
+                    <div class="lr-content-textarea" ><textarea readonly name="">OO今日上課精神不好OO今日上課精神不好OO今日上課精神不好OO今日上課精神不好OO今日上課精神不好</textarea></div>
+                  </div>
+                 <!-- 一個欄位結束 -->
+                 <!-- 一個欄位 -->
+                  <div style="padding-bottom: 30px">
+                    <div class="lr-title"><h3>家長的話</h3></div>
+                    <div class="lr-content-textarea"><textarea readonly name="">謝謝老師，會管好OO的</textarea></div>
+                  </div>
+                 <!-- 一個欄位結束 -->
+                   
+                 </div>
+             
+      
         </div>
+        
         
    </main>
 

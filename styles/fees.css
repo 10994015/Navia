@@ -1,0 +1,76 @@
+main{
+    
+}
+.fees-all{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.fees-s{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background: #fff;
+}
+.fees-s .fees-t{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px #000 solid;
+    font-size: 18px;
+    padding: 5px 0;
+}
+.fees-s .fees-c{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.fees-s .fees-c div{
+    display: flex;
+    align-items: center;
+}
+.fees-s .fees-c div img{
+    margin: 0 20px;
+    width: 200px;
+    height: 150px;
+
+
+}
+.fees-s .fees-c div h4{
+    font-size: 36px;
+}
+.fees-s .fees-c p{
+    margin: 0 50px;
+}
+
+ul.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-top: 100px;
+ }
+ul.pagination li {
+    display: inline;
+    
+}
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+ul.pagination li a.active{
+    color: #DA342A;
+}
+ul.pagination li a:hover{
+    background: #DA342A;
+    color:#fff;
+}

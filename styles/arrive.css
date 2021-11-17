@@ -1,0 +1,98 @@
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrive-date{
+    width: 500px;
+    height: 50px;
+    background: #EB7542;
+    display: flex;
+    justify-content: center;
+}
+.arrive-date input{
+    background: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+
+}
+.arrive-content{
+    width: 500px;
+    height: 500px;
+    background: #EBD4A2;
+    padding: 50px;
+}
+.arrive-ture,.arrive-fales{
+    display: flex;
+    width: 400px;
+    height: 100px;
+    border-radius: 15px;
+    background: #fff;
+    margin-bottom: 50px;
+    align-items: center;
+
+
+}
+.arrive-ture{
+     border-left: 4px solid #639e75;
+}
+.arrive-fales{
+      border-left: 4px solid #EB9B05;
+}
+.arrive-ture input,.arrive-fales input{
+    background: transparent;
+    margin-left: 30px;
+    font-size: 18px;
+}
+.arrive-ture img,.arrive-fales img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+     margin-left: 30px;
+}
+.arrive-ture h3,.arrive-fales h3{
+    line-height: 80px;
+    margin-left: 30px;
+    font-size: 1.5em;
+  }
+.arrive-ture h3{
+   
+    color:#639E75;
+}
+.arrive-fales h3{
+  
+    color:#EB9B05;
+}
+.arrive-main input{
+    outline: none;
+    border:none;
+}
+@media screen and (max-width: 414px){
+    .arrive-date{
+    width: 400px;
+    height: 50px;
+    background: #1F8AC7;
+    display: flex;
+    justify-content: center;
+}
+.arrive-content{
+    width: 400px;
+    height: 400px;
+    background: #99D9F6;
+    padding: 25px;
+    padding-top:50px;
+}
+.arrive-ture,.arrive-fales{
+    width: 350px;
+    height: 80px;
+}
+.arrive-ture h3,.arrive-fales h3{
+    line-height: 60px;
+    margin-left: 30px;
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,60 @@
+.basic-main{
+    padding-top: 0;
+    position: relative;
+    height: 1100px;
+}
+     .basic{
+        margin: 100px auto;
+        width: 50%;
+        font-size: 20px;
+       
+    }
+    .basic i{
+        color:#EEC71C;
+    }
+    table{
+        border-style: hidden;
+        box-shadow: 0 0 0 5px #EB7842;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, .4);
+
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif,"微軟正黑體";
+    }
+   table,table td,table th{
+    border: 1px #EB7842 solid;
+    border-collapse: collapse;
+    height: 50px;
+    padding:0 3px;
+    font-size: 17px;
+ 
+   }
+   .basic input{
+    background-color:transparent;
+   }
+   table input:not([type=date]){
+    width: 140px;
+   }
+  
+   table input[type=date]{
+    width: 180px;
+   }
+   .basic img{
+    width: 100%;
+    height: 500%;
+    object-fit: cover;
+   }
+
+@media screen and (max-width: 768px){
+    .basic {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .basic-main{
+        height: auto;
+        overflow-x: scroll;
+    }
+    .basic{
+        width: 700px;
+    }
