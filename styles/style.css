@@ -584,7 +584,12 @@ footer .footerText{
     align-items: center;
     color:#000;
     flex-direction: column;    
-    padding-top: 80px
+    padding-top: 60px;
+    font-size: 17px;
+    font-family: "微軟正黑體"";
+}
+footer .footerText > span{
+    margin: 2px 0;
 }
 footer .footerIcon{
     padding-left: 50px;
