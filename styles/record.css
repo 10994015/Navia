@@ -54,7 +54,7 @@ main{
      background-color: #EBD4A2;
 
 }
-.lr-content input{
+.lr-content input,.lr-content select{
     width: 550px;
     height: 40px;
     margin-top: 27px;
@@ -72,8 +72,7 @@ main{
 
 }
 .lr-content select{
-    width: 550px;
-    height: 40px;
+    cursor: pointer;
 }
 .lr-content-textarea:after{
       content: "";

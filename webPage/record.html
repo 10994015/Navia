@@ -69,67 +69,60 @@
 
 
         <div class="record-main">
-            <div class="Suject">
-                
-                <select name="" id="">
-                    <option value="">微積分</option>
-                    <option value="">微積分</option>
-                </select>
-            </div>
             
                 <div class="learning-recode">
                  <!-- 一個欄位 -->
                   <div>
                     <div class="lr-title"><h3>日期</h3></div>
-                    <div class="lr-content"> <input type="date" name="" value="2021-08-22" ></div>
+                    <div class="lr-content"> <input type="date" name="" value="2021-08-22" style="cursor: pointer;"></div>
                   </div>
                  <!-- 一個欄位結束 -->
                   <!-- 一個欄位 -->
                   <div>
                     <div class="lr-title"><h3>班級/課程代碼</h3></div>
-                    <div class="lr-content"><input type="text" name="" value="A1123" readonly></div>
+                    <div class="lr-content">
+                        <select name="" id="">
+                            <option value="">微積分[A1123]</option>
+                            <option value="">統計學[A1234]</option>
+                        </select>
+                </div>
                   </div>
                  <!-- 一個欄位結束 -->
-                  <!-- 一個欄位 -->
-                  <div>
-                    <div class="lr-title"><h3>科目</h3></div>
-                    <div class="lr-content"><input type="text" name="" value="微積分" readonly></div>
-                  </div>
-                 <!-- 一個欄位結束 -->
+                 
                   <!-- 一個欄位 -->
                   <div>
                     <div class="lr-title"><h3>課程進度</h3></div>
-                    <div class="lr-content"><input type="text" name="" value="CH1聽力練習第一回" readonly></div>
+                    <div class="lr-content"><input type="text" name="" value="CH1聽力練習第一回" disabled></div>
                   </div>
                  <!-- 一個欄位結束 -->
                   <!-- 一個欄位 -->
                   <div>
                     <div class="lr-title"><h3>回家作業</h3></div>
-                    <div class="lr-content"><input type="text" name="" value="題本p.15" readonly></div>
+                    <div class="lr-content"><input type="text" name="" value="題本p.15" disabled></div>
                   </div>
                  <!-- 一個欄位結束 -->
                   <!-- 一個欄位 -->
                   <div>
                     <div class="lr-title"><h3>考試/成績</h3></div>
-                    <div class="lr-content"><input type="text" name="" value="聽力第一次小考/100分" readonly></div>
+                    <div class="lr-content"><input type="text" name="" value="聽力第一次小考/100分" disabled></div>
                   </div>
                  <!-- 一個欄位結束 -->
                   <!-- 一個欄位 -->
                   <div>
                     <div class="lr-title"><h3>學生課程狀態</h3></div>
-                    <div class="lr-content"><input type="text" name="" value="精神不佳，上課打瞌睡" readonly></div>
+                    <div class="lr-content"><input type="text" name="" value="精神不佳，上課打瞌睡" disabled></div>
                   </div>
                  <!-- 一個欄位結束 -->
                  <!-- 一個欄位 -->
                   <div>
                     <div class="lr-title"><h3>老師的話</h3></div>
-                    <div class="lr-content-textarea" ><textarea readonly name="">OO今日上課精神不好OO今日上課精神不好OO今日上課精神不好OO今日上課精神不好OO今日上課精神不好</textarea></div>
+                    <div class="lr-content-textarea" ><textarea disabled name="">OO今日上課精神不好OO今日上課精神不好OO今日上課精神不好OO今日上課精神不好OO今日上課精神不好</textarea></div>
                   </div>
                  <!-- 一個欄位結束 -->
                  <!-- 一個欄位 -->
                   <div style="padding-bottom: 30px">
                     <div class="lr-title"><h3>家長的話</h3></div>
-                    <div class="lr-content-textarea"><textarea readonly name="">謝謝老師，會管好OO的</textarea></div>
+                    <div class="lr-content-textarea"><textarea disabled name="">謝謝老師，會管好OO的</textarea></div>
                   </div>
                  <!-- 一個欄位結束 -->
                    
@@ -149,11 +142,7 @@
         <div class="footerText">
             <span>聯絡電話:0900-000-000</span>
             <span>地址:矽谷分部</span>
-            <div class="footerIcon">
-                    <a href="javascript:;"><img src="../styles/images/facebook.png" alt="" width="30px" height="30"></a>
-                    <a href="javascript:;"><img src="../styles/images/instagram.png" alt="" width="30px" height="30"></a>
-                    <a href="javascript:;"><img src="../styles/images/line.png" alt="" width="30px" height="30"></a>
-            </div>
+            <span>核准立號：府教社字第1020020227號</span>
         </div>
     </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
