@@ -1,0 +1,93 @@
+.medicine-main input[type="text"]{
+    background-color: transparent;
+    height: 30px;
+}
+.med-1 div p:nth-child(1){
+    width: 100px;
+}
+ .med-1 div p:nth-child(2){
+    width: 150px;
+ }
+  .med-1 div p:nth-child(3){
+    width: 150px;
+  }
+.med-1 div{
+    display: flex;
+}
+.med-2{
+outline: none;
+border: 0;
+border-bottom: 1px #666 solid;
+width: 120px;
+}
+.medtitle{
+    background: #E83428;
+    color:#fff;
+    font-size: 18px;
+    text-align: center;
+    width: 200px;
+    padding: 5px;
+}
+.med{
+outline: none;
+border: 0;
+border-bottom: 1px #666 solid;
+width: 80px;
+}
+.med-img{
+    width: 150px;
+    height: 150px;
+    border: 1px #333 solid;
+    border-radius: 20px;
+    margin-left: 200px;
+}
+.medicine{
+    display: flex;
+    border-bottom: 2px dashed #999;
+    padding: 30px 0;
+}
+.medicine:nth-child(4){
+    border: none;
+}
+.med-img i{
+    line-height: 150px;
+    text-align: center;
+    color:#999;
+}
+.all-medicine{
+    width: 50%;
+    margin: 50px auto;
+}
+#med::placeholder,  #med-2::placeholder{
+    color:#999;
+    font-size: 16px;
+}
+.nofu{
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+.edit{
+    width: 150px;
+    height: 40px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #E83428;
+    color:#fff;
+    float: right;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+  select{
+width: 80px;
+background:transparent;
+border-bottom: 1px #444 solid;
+ text-align: center;
+ cursor: pointer;
+}
+select option{
+text-align: center;
+}

@@ -3,7 +3,8 @@ footer{
     width: 100%;
     height:300px;
     position: relative;
-    z-index: 99999999999;
+    z-index: 999;
+    background-color: #EEBF6B;
 }
 footer >img{
     width: 100%;

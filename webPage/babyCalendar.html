@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/contactBook.css">
-    <link rel="stylesheet" href="../styles/record.css">
+    <link rel="stylesheet" href="../styles/babyCalendar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="./styles/slick-1.6.0/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./styles/slick-1.6.0/slick/slick-theme.css"/>
@@ -66,33 +66,79 @@
         </div>
 
 
-        <div class="record-main">
+        <div class="babyCalendar-main">
             
-            <div class="recode">
-                <div class="recode-date">
-                    <img src="../styles/images/day.jpg" alt="">
+            <div class="parent-content">
+                <img src="styles/images/parent/icon2.png" alt="">
+                <div class="allparbtn">
+                <div class="parent-btn" id="parbtn1">109學年度(下)</div>
+                <div class="parent-btn" id="parbtn2">109學年度(上)</div>
+                <div class="parent-btn" id="parbtn3">108學年度(下)</div>
+                <div class="parent-btn" id="parbtn4">108學年度(上)</div>
                 </div>
-                <div class="recode-text">
-                    
                
-                <div>
-                    <p>午覺狀況：</p><i>熟睡/小睡/未睡/其他:　<input type="text" name="" value="熟睡" disabled></i>
-                </div>
-                 <div>
-                    <p>用餐狀況*早餐：</p><i>正常/未用/少量/食慾不佳/其他:　<input type="text" name="" value="正常" disabled></i>
-                </div>
-                 <div>
-                    <p>用餐狀況*午餐：</p><i>正常/未用/少量/食慾不佳/其他:　<input type="text" name="" value="正常" disabled></i>
-                </div>
-                 <div>
-                    <p>用餐狀況*下午茶：</p><i>正常/未用/少量/食慾不佳/其他:　<input type="text" name="" value="正常"" disabled></i>
-                </div>
-                <div>
-                    <p>體溫量測：</p><i>今日入校體溫:　<input type="text" name="" value="37.6" disabled></i>
-                </div>
+            　<div class="parent-t" id="par-text1" style="display: block;">
+               <h1>109學年度(下)行事曆</h1>
+               <p><img src="../styles/images/001.jpg" alt=""></p>
+            　</div> 
+            　<div class="parent-t" id="par-text2">
+              <h1>109學年度(上)行事曆</h1>
+               <p>109學年度(上)123</p> 
+            　</div>
+            　<div class="parent-t" id="par-text3">
+              <h1>108學年度(下)行事曆</h1>
+               <p>108學年度(下)ㄅㄆㄇ</p> 
+            　</div>
+            　<div class="parent-t" id="par-text4">
+               <h1>108學年度(上)行事曆</h1>
+               <p>108學年度(上)ooxx</p> 
+            　</div>
+            </div>
+           <script type="text/javascript">
+               window.onload=function(){
+                document.getElementById('parbtn1').onclick=parbtn1;
+                document.getElementById('parbtn2').onclick=parbtn2;
+                document.getElementById('parbtn3').onclick=parbtn3;
+                document.getElementById('parbtn4').onclick=parbtn4;
+                function parbtn1(){
+                    document.getElementById('par-text1').style.display='block';
+                    document.getElementById('par-text2').style.display='none';
+                    document.getElementById('par-text3').style.display='none';
+                    document.getElementById('par-text4').style.display='none';
                     
-                </div>
-                 </div>
+                }
+                 function parbtn2(){
+                    document.getElementById('par-text1').style.display='none';
+                    document.getElementById('par-text2').style.display='block';
+                    document.getElementById('par-text3').style.display='none';
+                    document.getElementById('par-text4').style.display='none';
+                    
+                }
+                function parbtn3(){
+                    document.getElementById('par-text1').style.display='none';
+                    document.getElementById('par-text2').style.display='none';
+                    document.getElementById('par-text3').style.display='block';
+                    document.getElementById('par-text4').style.display='none';
+                    
+                }
+                function parbtn4(){
+                    document.getElementById('par-text1').style.display='none';
+                    document.getElementById('par-text2').style.display='none';
+                    document.getElementById('par-text3').style.display='none';
+                    document.getElementById('par-text4').style.display='block';
+                    
+                }
+
+               }
+
+           </script>
+           <div class="parent-form">
+               <div>
+                    <img src="../styles/images/word.png" alt="" class="word">
+               <a href="家長同意書.docx" download>校外教學家長同意書</a>
+               </div>
+              
+           </div>
              
       
         </div>

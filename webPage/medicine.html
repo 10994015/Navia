@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/contactBook.css">
-    <link rel="stylesheet" href="../styles/record.css">
+    <link rel="stylesheet" href="../styles/medicine.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="./styles/slick-1.6.0/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./styles/slick-1.6.0/slick/slick-theme.css"/>
@@ -66,33 +66,66 @@
         </div>
 
 
-        <div class="record-main">
+        <div class="medicine-main">
             
-            <div class="recode">
-                <div class="recode-date">
-                    <img src="../styles/images/day.jpg" alt="">
+            <div class="all-medicine">     
+    
+                <h1>托藥單</h1>
+                <div class="medicine">
+            <div class="med-1">
+                   <h2 class="medtitle">用藥方式</h2>
+                   <div><p>藥水</p><p>每次 <input type="text" class="med"> CC</p></div>
+                    <div><p>藥粉</p><p>每次<input type="text" class="med">包</p></div>
+                     <div><p>藥丸</p><p>每次<input type="text" class="med">顆</p></div>
+                      <div><p>藥膏</p><p>塗抹區域:<input type="text" class="med"></p></div>
+                       <div><p>其他</p><p><input type="text" class="med">CC</p></div>
+                        <div style="margin-top:15px"><p>*備註</p><p><textarea name="" id="" cols="40" rows="5"></textarea></p></div>
+            </div>
+            <div class="med-img">
+                <img src="" alt="" id="" name="">
+                <i>(藥品圖)</i>
+            </div>
+             </div>
+            
+              <div class="medicine">
+            <div class="med-1">
+                   <h2 class="medtitle">餵藥時間</h2>
+                    <div><p> </p><p>家長填寫 </p><p>老師餵藥時間 </p></div>
+                   <div><p>第一次</p><p> <input type="text" class="med" value="09:00"> </p><p> <input type="text" class="med" value="09:03"> </p><p><input type="text" placeholder="餵藥老師簽名" class="med-2"></p></div>
+                    <div><p>第二次</p><p><input type="text" class="med" value="13:00"></p><p> <input type="text" class="med" value="13:01"></p><p><input type="text" placeholder="餵藥老師簽名" class="med-2"></p></div>
+                     <div><p>第三次</p><p><input type="text" class="med" value="17:00"></p><p> <input type="text" class="med" value="17:02"></p><p><input type="text" placeholder="餵藥老師簽名" class="med-2"></p></div>
+                      <div><p> </p><p><input type="text" class="med-2" placeholder="填寫人簽名"></p><p style="width: 300px;">每次餵藥時間應隔 <input type="text" class="med">小時</p></div>
+                      
+            </div>
+            
+             </div>
+            <div class="medicine">
+            <div class="med-1">
+            <div style="display: flex;">
+                 <h2 class="medtitle">不適症狀</h2> <h2 class="medtitle" style="margin-left: 150px;">不適症狀</h2>
+            </div>
+                <div style="display: flex;">
+                    <div style="display: flex;flex-wrap: wrap;width: 320px;">
+                    <span class="nofu"><input type="checkbox" name="" id="btn01"><label for="btn01">發燒</label></span>
+                    <span class="nofu"><input type="checkbox" name="" id="btn02"><label for="btn02">喉嚨痛</label></span>
+                    <span class="nofu"><input type="checkbox" name="" id="btn03"><label for="btn03">噁心想吐</label></span>
+                    <span class="nofu"><input type="checkbox" name="" id="btn04"><label for="btn04">食慾不振</label></span>
+                    <span class="nofu"><input type="checkbox" name="" id="btn05"><label for="btn05">拉肚子</label></span>
+                     <span class="nofu"><label for="">其他:</label><input type="text" name="" class="med"></span>
+                    </div>
+                     <div style="display: flex;flex-wrap: wrap;width: 300px;">
+                    <span class="nofu"><input type="checkbox" name="" id="btn06"><label for="btn06">正常</label></span>
+                    <span class="nofu"><input type="checkbox" name="" id="btn07"><label for="btn07">嘔吐</label></span>
+                     <span class="nofu"><label for="">其他:</label><input type="text" name="" class="med"></span>
+                    </div>
                 </div>
-                <div class="recode-text">
-                    
-               
-                <div>
-                    <p>午覺狀況：</p><i>熟睡/小睡/未睡/其他:　<input type="text" name="" value="熟睡" disabled></i>
-                </div>
-                 <div>
-                    <p>用餐狀況*早餐：</p><i>正常/未用/少量/食慾不佳/其他:　<input type="text" name="" value="正常" disabled></i>
-                </div>
-                 <div>
-                    <p>用餐狀況*午餐：</p><i>正常/未用/少量/食慾不佳/其他:　<input type="text" name="" value="正常" disabled></i>
-                </div>
-                 <div>
-                    <p>用餐狀況*下午茶：</p><i>正常/未用/少量/食慾不佳/其他:　<input type="text" name="" value="正常"" disabled></i>
-                </div>
-                <div>
-                    <p>體溫量測：</p><i>今日入校體溫:　<input type="text" name="" value="37.6" disabled></i>
-                </div>
-                    
-                </div>
-                 </div>
+                      <div><i> * 成藥及未經醫院或開業醫師所開立之處方，恕不在托藥範圍內。</i></div>
+                      
+            </div>
+            
+             </div>
+            <button type="" class="edit">更新</button>
+             </div>
              
       
         </div>
