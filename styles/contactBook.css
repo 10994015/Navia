@@ -1,9 +1,8 @@
-  
+
 a{
     text-decoration: none;
 }
-
-    /*-----------menu-------------*/
+/*-----------menu-------------*/
     .cb-menu{
         position: relative;
         position: fixed;
@@ -93,10 +92,11 @@ a{
     main{
         background-color: #EEBF6B;
         min-height: 700px;
-        padding: 5em 0;
+        padding: 8em 0;
         
     }
   .contentbook{
+        padding: 15em 0;
         position: relative;
         min-height: 700px;
     }

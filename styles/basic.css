@@ -4,8 +4,9 @@
     height: 1100px;
 }
 main{
-    overflow-x: scroll;
+    
     padding: 10px;
+    height: 100vh;
 }
      .basic{
         margin: 100px auto;
@@ -51,6 +52,7 @@ main{
 @media screen and (max-width: 768px){
     main{
         padding-top:8rem;
+        overflow-x: scroll;
     }
     .basic {
         width: 90%;

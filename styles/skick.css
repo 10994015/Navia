@@ -20,8 +20,12 @@
 @media screen and (max-width:1024px){
    
     .slides{
+        width: 95%;
         margin-top: 80px;
     }
+    
+
+    
 }
 
 
