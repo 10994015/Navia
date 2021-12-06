@@ -8,6 +8,8 @@
         margin-top: 50px;
     }
     .parent-form{
+      width: 80%;
+      margin: auto;
       height: 200px;
       margin-top: 50px;
     }
@@ -18,7 +20,6 @@
      .parent-form  div{ 
       display: flex;
       color:#999;
-      margin:0 0 0 200px;
       font-size: 32px;
      }
        .parent-form  div a{
@@ -96,3 +97,39 @@
     .parent-t img{
       width: 100%;
     }
+
+  @media screen and (max-width:450px){
+    .parent-form  div{ 
+      display: flex;
+      color:#999;
+      font-size: 24px;
+     }
+     #parbtn1,#parbtn3{
+      width: 80%;
+      height: 40px;
+      color:#0E71C9;
+      font-size: 20px;
+      background-color: #fff;
+      font-weight: bold;
+      border: 1px #ccc solid;
+       cursor: pointer; 
+       margin: 10px;
+       line-height: 40px;
+       padding-left: 20px;
+
+  }
+
+   #parbtn2,#parbtn4{
+      width: 80%;
+      height: 40px;
+      color:#0E0D59;
+      background-color: #D4EDFF;
+      font-size: 20px;
+      font-weight: bold;
+      border: 1px #ccc solid;
+       cursor: pointer; 
+       margin: 10px;
+       line-height: 40px;
+       padding-left: 20px;
+  }
+  }

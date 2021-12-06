@@ -3,6 +3,10 @@
     position: relative;
     height: 1100px;
 }
+main{
+    overflow-x: scroll;
+    padding: 10px;
+}
      .basic{
         margin: 100px auto;
         width: 50%;
@@ -45,6 +49,9 @@
    }
 
 @media screen and (max-width: 768px){
+    main{
+        padding-top:8rem;
+    }
     .basic {
         width: 90%;
     }

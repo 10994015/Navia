@@ -1,5 +1,5 @@
 main{
-    min-height: 100vh;
+    min-height: 120vh;
     height: auto;
     padding-top: 5rem;
     background-color: #EEBF6B;
@@ -61,7 +61,39 @@ main{
     margin-top: 0;
     opacity: 1;
 }
-
+.title{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.title h1{
+    position: relative;
+    text-align: center;
+}
+.title h1::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left:calc(50% - 50px);
+    width: 100px;
+    height: 5px;
+    background: #E83428;
+    animation: titleanm 5s infinite;
+}
+@keyframes titleanm{
+    0%{
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(2, 1);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
 ul.pagination {
     display: flex;
     justify-content: center;
@@ -87,4 +119,48 @@ ul.pagination li a.active{
 ul.pagination li a:hover{
     background: #DA342A;
     color:#fff;
+}
+@media screen and (max-width:1024px){
+    main{
+        min-height: 100vh;
+        height: auto;
+        padding-top: 10rem;
+        background-color: #EEBF6B;
+    }
+}
+@media screen and (max-width:1024px){
+    .container{
+        width: 90%;
+        margin:auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 20px;
+    }
+}
+@media screen and (max-width:768px){
+    .container{
+        width: 90%;
+        margin:auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+    }
+}
+@media screen and (max-width:630px){
+    .container{
+        width: 90%;
+        margin:auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+}
+@media screen and (max-width:500px){
+    .container{
+        width: 90%;
+        margin:auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+    }
 }
