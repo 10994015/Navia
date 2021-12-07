@@ -122,13 +122,11 @@ ul.pagination li a:hover{
 }
 @media screen and (max-width:1024px){
     main{
-        min-height: 100vh;
+        min-height: 130vh;
         height: auto;
         padding-top: 10rem;
         background-color: #EEBF6B;
     }
-}
-@media screen and (max-width:1024px){
     .container{
         width: 90%;
         margin:auto;
@@ -137,7 +135,14 @@ ul.pagination li a:hover{
         grid-gap: 20px;
     }
 }
+
 @media screen and (max-width:768px){
+    main{
+        min-height: 160vh;
+        height: auto;
+        padding-top: 10rem;
+        background-color: #EEBF6B;
+    }
     .container{
         width: 90%;
         margin:auto;
@@ -154,8 +159,20 @@ ul.pagination li a:hover{
         grid-template-columns: repeat(2,1fr);
         grid-gap: 20px;
     }
+    main{
+        min-height: 190vh;
+        height: auto;
+        padding-top: 10rem;
+        background-color: #EEBF6B;
+    }
 }
 @media screen and (max-width:500px){
+    main{
+        min-height: 330vh;
+        height: auto;
+        padding-top: 10rem;
+        background-color: #EEBF6B;
+    }
     .container{
         width: 90%;
         margin:auto;
