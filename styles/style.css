@@ -573,6 +573,7 @@ footer .footerbg{
     position: absolute;
     width: 100%;
 }
+
 footer .footerText{
     position: absolute;
     top: 0;
@@ -590,13 +591,11 @@ footer .footerText{
     font-family: "微軟正黑體";
 }
 footer .footerText > span{
-    margin: 2px 0;
+    margin: 3px 0;
 }
-footer .footerIcon{
-    padding-left: 50px;
-}
+
 footer .footerIcon > a{
-    margin:0 5px;
+    margin:0px 8px;
 }
 footer #top{
     width: 100px;
@@ -675,6 +674,11 @@ footer #top > i{
 @media screen and (max-width:1024px){
     header{
         margin-bottom: -10px;
+        padding-top: 80px;
+
+    }
+    header .headerBg{
+        height: 200px;
     }
     nav{
         margin-top: 0px;
@@ -757,6 +761,9 @@ footer #top > i{
     
 }
 @media screen and (max-width:600px){
+    
+
+   
     .fox1{
         position: absolute;
         top: -80px;

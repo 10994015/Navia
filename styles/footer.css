@@ -31,11 +31,8 @@ footer .footerText{
     font-size: 17px;
     font-family: "微軟正黑體";
 }
-footer .footerIcon{
-    padding-left: 50px;
-}
 footer .footerIcon > a{
-    margin:0 5px;
+    margin:0 8px;
 }
 footer #top{
     width: 100px;
